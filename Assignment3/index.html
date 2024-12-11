@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Assingment 3</title>
+</head>
+<style>
+    div{
+        font-size: 18px;
+        margin-bottom:10px;
+    }
+    b{
+        margin: 10px;
+    }
+    input[type=file]{
+        margin-bottom: 5px;
+    }
+</style>
+<body>
+    <h1>Baitussalam Wellfare Trust</h1>
+    <form>
+        <caption><b>Sign Up form</b></caption>
+
+        <div>
+            <input type="text" name='username' placeholder="Enter your name">
+        </div>
+        <div><input type="text" name='cnic' placeholder="CNIC"></div>
+        <div><input type='password' name='password' placeholder="Password"></div>
+        <hr>
+        <div>
+            <caption><b>Select your Gender</b></caption>
+            <div>
+
+                <input id='maleGender' type='radio' name='gender' value="Male">
+                <label for='maleGender'>Male</label>
+                <input id='femaleGender' type='radio' name='gender' value="Female">
+                <label for='femaleGender'>Female</label>
+                <input id='uGender' type='radio' name='gender' value="Unkown">
+                <label for='muGender'>Unkwnon</label>
+            </div>
+        </div>
+        <hr>
+        <div>
+            <caption><b>Seelct your Qualification</b></caption>
+            <div>
+            <select>
+                <option>A levels</option>
+                <option>Fsc</option>
+                <option>Matric</option>
+                <option>1st year</option>
+                <option>2nd Year</option>
+            </select>
+        </div>
+        </div>
+        <hr>
+        <div>
+            <caption><b>Select Courses</b></caption>
+            <div>
+                <input id = 'pCourse' type='checkbox' name='course' value="Python">
+                <label for = 'pCourse'>Python</label>
+                <input id = 'jCourse' type='checkbox' name='course' value="Javascript">
+                <label for = 'jCourse'>Javascript</label>
+                <input id = 'jaCourse' type='checkbox' name='course' value="Java">
+                <label for = 'jaCourse'>Java</label>
+
+            </div>
+            <div>
+                <input id = 'cCourse' type='checkbox' name='course' value="C">
+                <label for ='cCourse'>C lang</label>
+                <input id = 'bCourse' type='checkbox' name='course' value="Backend Developer">
+                <label for ='bCourse'>Backend Developer</label>
+                <input id = 'fCourse' type='checkbox' name='course' value="Frontend Developer">
+                <label for ='fCourse'>Frontend Developer</label>
+            </div>
+        </div>
+        <hr>
+        <div>
+            <caption>Select your city</caption>
+            <select>
+                <option>Karachi</option>
+                <option>Lahore</option>
+                <option>Larkana</option>
+                <option>Fasilabad</option>
+                <option>Rawalpindi</option>
+                <option>Gujranwala</option>
+            </select>
+        </div>
+        <hr>
+        <div>
+            <input id = 'piUpload'type="file" placeholder="Upload your picture">
+            <label for ='piUpload'>Upload your picture</label>
+            <br>
+            <input id = 'quUpload' type="file">
+            <label for='quUpload'>Upload Picture of your Qualification</label>
+            <br>
+        </div>
+        <hr>
+        <textarea name="about" cols = 50 rows =5 > </textarea>
+        <hr>
+        <input type="submit" value="Sumbit Form">
+    </form>
+</body>
+
+</html>
