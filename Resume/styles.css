@@ -1,0 +1,55 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+    margin:0px;
+    box-sizing: border-box;
+}
+
+#section1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    padding: 20px;
+    width: 100%;
+    background-color: rgb(190, 121, 255);
+    text-align: center;
+    box-sizing: border-box;
+}
+#section1 img{
+    width: 100px;
+    border-radius: 100px;
+}
+#section_2_3_wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#section2 h3{
+    text-align: right;
+}
+#section2{
+    width: 30%;
+    background-color: aquamarine;
+    height: 83vh;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#section2 p{
+    text-align: right;
+    margin: 5px;
+    margin-left:10px ;
+}
+#section3{
+    width: 80%;
+    background-color: bisque;
+    height: 83vh;
+}
+#section3 h3{
+    padding-left: 10px;
+}
+
+.projects{
+    padding-left: 20px;
+}
