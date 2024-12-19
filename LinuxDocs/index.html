@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Linux Course Documentation</title>
+</head>
+<style>
+    h1 {
+        text-align: center;
+    }
+
+    .element {
+        border: .5px solid black;
+        padding: 10px;
+        margin-bottom: 5px;
+    }
+</style>
+
+<body>
+    <h1><code>Linux Documentation</code></h1>
+    <div class="element">
+        <h3><code>cd -  (change directory)</code></h3>
+        <p> <code>cd ~ -(change dir to home dir)</code></p>
+        <p> <code>cd .. -(step back)</code></p>
+        <p> <code>cd ../siblling - (cahnge dir to specific sibling folder)</code></p>
+    </div>
+    <div class = 'element'>
+        <h3><code>pwd - (print working directory)</code></h3>
+    </div>
+    <div class = 'element'>
+        <h3><code>ls - (list content of current working directory)</code></h3>
+        <p><code>ls -a  - (list all files including hidden ones)</code></p>
+        <p><code>ls -R  -(list all of the files in subdirectory recursively)</code></p>
+        <p><code>ls -lh -(list allof the files with all other information e.g last modified, permissions,memory size,file name,file type)</code></p>
+    </div>
+    <div class="element">
+        <h3><code>cp -(files and directories)</code></h3>
+        <p><code>cp `source` `destination`  - (copy files from source to destination)</code></p>
+    </div>
+    <div class="element">
+        <h3><code>mv -(move/rename file)</code></h3>
+        <p><code>mv `source` `destination` - (move files from source to destination)#[different name in same dir will rename]</code></p>
+    </div>
+    <div class="element">
+        <h3><code>ln -s filename fileLink - (create symbolink)</code></h3>
+    </div>
+    <div class="element">
+        <h3><code>Symbolink vs Hardlink</code></h3>
+        <ul>
+            <li><code>if you delete the original file, a symbolink will be broken, whereas a hard link will remains functional as it points to the same inode</code> </li>
+            <li><code>Symblink can span file filesystems; while hard links can not</code></li>
+            <li><code>Symblink have their own inode and data block, while hard linkks share the the same inode and data blocks as the original file</code></li>
+            <li><code>Symbolinks can refernce directories/files while hard link can only reference files</code></li>
+            <li><code>In summary symlinks are more flexible and can point directories or across filesystems, but they are more fragile. Hardlinks are more robust</code></li>
+        </ul>
+    </div>
+</body>
+
+</html>
