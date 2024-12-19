@@ -1,62 +1,81 @@
 <!DOCTYPE html>
+
 <head>
 	<title>Hanzala Khan</title>
 </head>
 
 <style>
-	ul{
-		list-style-type:none;	
+	ul {
+		list-style-type: decimal-leading-zero;
 	}
+
 	li a {
-		text-decoration:none;
-		font-size:20px;
+		text-decoration: none;
+		font-size: 20px;
 	}
-	li p{
-		display:inline;
-	}	
-	#assignments{
-		
-		border:.5px solid grey;
-		padding :10px;
+
+	p {
+		display: inline;
 	}
-	#assignments h2 {
-		text-align:center;
-		background-color:gray;
-		padding:10px;
+
+	#Projects {
+
+		border: .5px solid grey;
+		padding: 10px;
 	}
-	.tabIcon{
-		background-color:lightblue;
-		padding:5px;		
-		border-radius:3px;
-	}
-	.tabIcon:hover{
-		background-color:lightgray;
+
+	#Projects h2 {
+		text-align: center;
+		background-color: gray;
+		padding: 10px;
 	}
 </style>
 <script>
-	function changeTab(tab){
+	function changeTab(tab) {
 		document.getElementById(tab).classList.add('show')
-}
+	}
 </script>
-<body>
-	<span class='tabIcon'>Assignments</span>
-	<span class='tabIcon'>How To's</span>
-	<div id = 'assignments'>
-		<h2>Assignments</h2>
-		<ul>
-			<li>
-				<a target = '_blank' href='Assignment1/index.html'>Assignment 1</a>
-				<p>Date:12/6/24</p>
-			</li>
-			<li>	
-				<a target = '_blank' href='Assignment2/index.html'>Assignment 2</a>
-				<p>Date:12/9/24</p>
-			</li>
-		</ul>
-	</div>
-	<div id = 'howtos'></div>
 
+<body>
+	<div id='Projects'>
+		<h2>Projects</h2>
+		<table>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Date</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><a target='_blank' href='Assignment1/index.html'>Assignment 1</a></td>
+					<td>Date:12/6/24</td>
+				</tr>
+				<tr>
+					<td><a target='_blank' href='Assignment2/index.html'>Assignment 2</a></td>
+					<td>Date:12/6/24</td>
+				</tr>
+				<tr>
+					<td><a target='_blank' href='Assignment3/index.html'>Assignment 3</a></td>
+					<td>Date:12/6/24</td>
+				</tr>
+				<tr>
+					<td><a target='_blank' href='Assignment4/index.html'>Assignment 4</a></td>
+					<td>Date:12/6/24</td>
+				</tr>
+				<tr>
+					<td><a target='_blank' href='Resume/'>Resume</a></td>
+					<td>Date:12/6/24</td>
+				</tr>
+				<tr>
+					<td><a target='_blank' href='LinuxDocs/index.html'>Linux Docs</a></td>
+					<td>Date:12/6/24</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
 
 
 </body>
+
 </html>
