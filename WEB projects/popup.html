@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>popUP</title>
+</head>
+<script>
+    function togglePopup(){
+        if (document.getElementById('popup').style.display == 'none'){
+            document.getElementById('popup').style.display = 'block'
+            document.getElementById('btn').innerHTML ='Close PopUP'
+        }
+        else{
+            document.getElementById('popup').style.display = 'none'
+            document.getElementById('btn').innerHTML ='Open PopUP'
+        }
+    }
+
+</script>
+<style>
+    #popup{
+        z-index: 2;
+        display: none;
+    }
+</style>
+<body>
+    <div id = 'popup'>
+        <p>THis is pop up with image</p>
+        <img src="./imgs/logo.jpg" width="200px">
+    </div>
+    <button id = 'btn' onclick="togglePopup()">Open PopUp</button>
+</body>
+</html>
