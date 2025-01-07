@@ -1,0 +1,31 @@
+body {
+  margin: 0px;
+}
+ul {
+  margin-top: 0px;
+  list-style: none;
+  background-color: rgb(208, 255, 239);
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+ul li {
+  display: inline;
+  background-color: rgb(51, 255, 187);
+  padding: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+  border-radius: 4px;
+}
+
+ul li:hover {
+  background-color: aliceblue;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+h1 {
+  text-align: center;
+}
