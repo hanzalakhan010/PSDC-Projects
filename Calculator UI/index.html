@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculator UI</title>
+    <script src="script.js"> </script>
+  </head>
+  <body>
+    <div>
+      <table>
+        <tr>
+            <td colspan="4">
+                <input id = 'text'></input>
+            </td>
+        </tr>
+        <tr>
+          <td onclick="onPress('1')">1</td>
+          <td onclick="onPress('2')">2</td>
+          <td onclick="onPress('3')">3</td>
+          <td onclick="onPress('+')">+</td>
+        </tr>
+        <tr>
+          <td onclick="onPress('4')">4</td>
+          <td onclick="onPress('5')">5</td>
+          <td onclick="onPress('6')">6</td>
+          <td onclick="onPress('-')">-</td>
+        </tr>
+
+        <tr>
+          <td onclick="onPress('7')">7</td>
+          <td onclick="onPress('8')">8</td>
+          <td onclick="onPress('9')">9</td>
+          <td onclick="onPress('*')">*</td>
+        </tr>
+        <tr>
+          <td onclick="onPress('0')" >0</td>
+          <td onclick="onPress('00')">00</td>
+          <td onclick="onPress('.')">.</td>
+          <td onclick="onPress('/')">/</td>
+          
+        </tr>
+
+        <tr>
+          <td onclick="clearAll()">AC</td>
+          <td onclick="clear()">C</td>
+          <td onclick="onPress('=')" colspan="2">=</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
