@@ -1,0 +1,26 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+#text{
+    height: 70vh;
+    font-size: 25px;
+}
+
+#commands{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+#commands button,#commands input{
+    box-sizing: border-box;
+    padding: 30px;
+    width:100px;
+    height: 100px;
+    font-size: xx-large;
+}
