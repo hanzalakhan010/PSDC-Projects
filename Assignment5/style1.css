@@ -1,0 +1,15 @@
+#gridContainer{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+.ele{
+    height: 10vh;
+    margin: 1px;
+    background-color: aqua;
+    border: .1px solid blue;
+    transition: 1s transform;
+}
+.ele:hover{
+    transform: rotateZ(90deg);
+    
+}
