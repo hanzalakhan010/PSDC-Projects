@@ -8,12 +8,14 @@ function loadCurrencies(){
         console.log(data)
         for (ele in data.Currencies){
             document.getElementById('to').innerHTML+=`
-            <option>${ele[[1]]}</option>
+            <option value '${data.Currencies[ele][0]}'>${data.Currencies[ele][1]}</option>
+            `
+            document.getElementById('from').innerHTML+=`
+            <option value '${data.Currencies[ele][0]}'>${data.Currencies[ele][1]}</option>
             `
         }
     })
 }
-loadCurrencies()
 
 function fetchRates(){
     fetch(`https://v6.exchangerate-api.com/v6/${apiKey}/latest/USD`)
