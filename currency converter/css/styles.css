@@ -1,0 +1,17 @@
+select{
+    margin: 10px;
+    font-size: x-large;
+
+}
+input{
+    margin:10px;
+    font-size: x-large;
+    width: 35%;
+}
+
+body{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
