@@ -8,8 +8,9 @@
     </script>
 <body>
     <h1>Currency Converter</h1>
-    <input type="number" id = 'currency'>
-    <div>
+    <div id = 'main'>
+        <input type="number" id = 'currency'>
+        <input type="number" id = 'currency_converted' disabled>
         <select id = 'from'>
             <option>Select currency</option>
         </select>
@@ -17,11 +18,12 @@
             <option>Select currency</option>
 
         </select>
+        <div></div>
+        <button onclick="convert()">Convert</button>
     </div>
-    
 </body>
 <script>
 loadCurrencies()
-
+fetchRates()
 </script>
 </html>
