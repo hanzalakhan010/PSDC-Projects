@@ -1,0 +1,45 @@
+*{
+    margin:0px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+header{
+    background-color: aquamarine;
+
+}
+header h1 {
+    padding-top: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    /* margin-top: 10px; */
+}
+header nav {
+    width: 100%;
+
+}
+ul{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 20px;
+}
+ul li {
+    display: inline;
+    margin-right: 50px;
+    margin-left: 50px;
+    text-align: center;
+}
+
+section{
+    padding: 10px;
+    margin: 25px;
+    border: .5px solid gray;
+}
+
+footer{
+    padding:5px;
+    width:100%;
+    position: fixed;
+    bottom: 0px;
+    background-color: aquamarine;
+    text-align: center;
+}
