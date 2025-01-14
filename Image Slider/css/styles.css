@@ -1,6 +1,43 @@
-#allImg{
 
-}
 #allImg img{
     width: 100px;
+}
+#allImg img:hover{
+    width: 105px;
+}
+#allImg{
+    display: flex;
+    flex-direction: row;
+    gap: 1%;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    margin-bottom: 10px;
+}
+#mainImg{
+    width: 50%;
+    height: 65vh;
+}
+#mainDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#preBtn, #nxtBtn{
+    position: fixed;
+    top: 50%;
+    font-size: medium;
+    border: none;
+    padding: 20px;
+    background-color:aquamarine;
+    border-radius: 10px;
+}
+#nxtBtn{
+    right: 100px;
+}
+#preBtn{
+    left: 100px;
 }

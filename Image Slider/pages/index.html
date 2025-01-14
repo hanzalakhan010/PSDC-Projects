@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Slider</title>
     <link href="../css/styles.css" rel="stylesheet">
+    <script src="../scripts/script.js"></script>
 </head>
 <body>
-    <img id = 'mainImg'>
-    <div id = 'allImg'>
-        <img src="../imgs/1.jpeg">
-        <img src="../imgs/2.jpeg">
-        <img src="../imgs/3.jpg">
-        <img src="../imgs/4.jpeg">
-        <img src="../imgs/5.jpg">
+    <div id = 'mainDiv'>
+        <h1>Image Slider</h1>
+        <img id = 'mainImg'>
+        <div id = 'allImg'>
+            <img src="../imgs/1.jpeg">
+            <img src="../imgs/2.jpeg">
+            <img src="../imgs/3.jpeg">
+            <img src="../imgs/4.jpeg">
+            <img src="../imgs/5.jpeg">
+        </div>
     </div>
+    <button onclick="nextImg()" id = 'preBtn'>Previous</button>
+    <button onclick="nextImg()"  id = 'nxtBtn'>Next</button>
 </body>
+<script>
+    setImg()
+</script>
 </html>
