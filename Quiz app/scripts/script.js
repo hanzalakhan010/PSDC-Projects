@@ -9,9 +9,12 @@ function LoadQuestions() {
 }
 function setQuestion() {
   let questions = JSON.parse(localStorage.getItem("que"));
+  
   document.getElementById("que").innerHTML = "Question: " + questions[questionNo]["question"];
   document.getElementById("hint").innerHTML = "Hint: " + questions[questionNo]["hint"];
   document.getElementById("ans").innerHTML = "Answer: " + questions[questionNo]["answer"];
+  document.getElementById('hint').style.visibility = 'hidden'
+  document.getElementById('ans').style.visibility = 'hidden'
 }
 function next() {
   if (questionNo >= 19) {
