@@ -1,0 +1,104 @@
+{
+  "questions": [
+    {
+      "question": "What does CPU stand for?",
+      "answer": "Central Processing Unit.",
+      "hint": "It's the core component of a computer responsible for executing instructions."
+    },
+    {
+      "question": "What is an algorithm?",
+      "answer": "A step-by-step procedure for solving a problem.",
+      "hint": "It’s often used in programming and problem-solving."
+    },
+    {
+      "question": "What is the purpose of an operating system?",
+      "answer": "To manage hardware and software resources on a computer.",
+      "hint": "It acts as an intermediary between the user and computer hardware."
+    },
+    {
+      "question": "What does HTML stand for?",
+      "answer": "HyperText Markup Language.",
+      "hint": "It is used to create the structure of web pages."
+    },
+    {
+      "question": "What is the difference between RAM and ROM?",
+      "answer": "RAM is volatile memory, while ROM is non-volatile.",
+      "hint": "One type loses data when the power is off, the other does not."
+    },
+    {
+      "question": "What is the main function of the BIOS?",
+      "answer": "To initialize and test hardware during the boot process.",
+      "hint": "It’s the first thing that runs when you power on a computer."
+    },
+    {
+      "question": "What is a database?",
+      "answer": "A structured collection of data stored and accessed electronically.",
+      "hint": "Used to store information in an organized manner, often in tables."
+    },
+    {
+      "question": "What is a compiler?",
+      "answer": "A program that translates high-level code into machine language.",
+      "hint": "It converts source code into executable code."
+    },
+    {
+      "question": "What is cloud computing?",
+      "answer": "Using remote servers hosted on the internet to store and manage data.",
+      "hint": "Allows users to access computing resources over the internet."
+    },
+    {
+      "question": "What does IP stand for?",
+      "answer": "Internet Protocol.",
+      "hint": "A set of rules that defines how data is sent and received on the internet."
+    },
+    {
+      "question": "What is a firewall in computer security?",
+      "answer": "A system that monitors and controls incoming and outgoing network traffic.",
+      "hint": "It acts as a barrier to protect a network from unauthorized access."
+    },
+    {
+      "question": "What does DNS stand for?",
+      "answer": "Domain Name System.",
+      "hint": "It translates domain names into IP addresses."
+    },
+    {
+      "question": "What is the primary function of a web browser?",
+      "answer": "To retrieve, display, and navigate web pages.",
+      "hint": "It allows users to access and view websites on the internet."
+    },
+    {
+      "question": "What is encryption?",
+      "answer": "The process of converting data into a code to prevent unauthorized access.",
+      "hint": "It’s used to protect sensitive information."
+    },
+    {
+      "question": "What does API stand for?",
+      "answer": "Application Programming Interface.",
+      "hint": "It allows different software applications to communicate with each other."
+    },
+    {
+      "question": "What is the difference between a class and an object in OOP?",
+      "answer": "A class is a blueprint, while an object is an instance of a class.",
+      "hint": "A class defines properties and methods; an object is the actual entity."
+    },
+    {
+      "question": "What is recursion in programming?",
+      "answer": "When a function calls itself in order to solve a problem.",
+      "hint": "Used to break problems into smaller, similar sub-problems."
+    },
+    {
+      "question": "What is version control?",
+      "answer": "A system to manage changes to code over time.",
+      "hint": "It helps track revisions and coordinate work between developers."
+    },
+    {
+      "question": "What does SSH stand for?",
+      "answer": "Secure Shell.",
+      "hint": "It’s a protocol for securely accessing remote computers over a network."
+    },
+    {
+      "question": "What is a neural network in AI?",
+      "answer": "A series of algorithms modeled after the human brain to recognize patterns.",
+      "hint": "It’s used in machine learning for tasks like image and speech recognition."
+    }
+  ]
+}

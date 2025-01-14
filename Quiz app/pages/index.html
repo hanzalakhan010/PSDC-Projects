@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Quiz App</title>
+    <link href="../css/styles.css" rel = 'stylesheet'>
+    <script src="../scripts/script.js"></script>
+</head>
+<body>
+    <h1>Quiz App</h1>
+    <div id = 'main'>
+        <div id = 'board'>
+            <div id = 'que'></div>
+            <div id = 'ans'></div>
+            <div id = 'hint'></div>
+        </div>
+        <button id = 'previousbtn' onclick="previous()">Previous</button>
+        <button id = 'hintbtn' onclick="showHint()">Hint</button>
+        <button id = 'showbtn' onclick="showAnswer()">Show Answer</button>
+        <button id = 'nextbtn' onclick="next()">Next</button>
+    </div>
+</body>
+<script>
+    setQuestion()
+</script>
+</html>

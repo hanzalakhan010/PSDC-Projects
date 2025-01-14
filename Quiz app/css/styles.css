@@ -1,0 +1,53 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+#ans,#hint{
+    visibility: hidden;
+}
+h1{
+    text-align: center;
+}   
+#main{
+    position: relative;
+    background-color: bisque;
+    font-size: larger;
+    padding: 15%;
+    text-align: center;
+    margin: 5%;
+}
+#previousbtn{
+    position: absolute ;
+    bottom: 0px;
+    margin: 10px;
+    left: 0px;
+}
+#nextbtn{
+    position: absolute ;
+    bottom: 0px;
+    margin: 10px;
+    right: 0px;
+}
+
+#showbtn{
+    position: absolute ;
+    bottom: 0px;
+    margin: 10px;
+    right: 100px; 
+}
+#hintbtn{
+    position: absolute ;
+    bottom: 0px;
+    margin: 10px;
+    right: 250px; 
+}
+button{
+    background-color: rgb(168, 199, 255);
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgb(126, 171, 255);
+
+}

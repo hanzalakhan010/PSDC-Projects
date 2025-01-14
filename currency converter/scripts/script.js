@@ -1,6 +1,5 @@
 const apiKey = '774e48be10561ee8c5790932'
 function loadCurrencies(){
-    console.log('fdfdfdf')
     fetch('../scripts/currencies.json')
     .then((res)=>res.json())
     .then((data)=>{
