@@ -1,0 +1,17 @@
+#Projects {
+  border: 0.5px solid grey;
+  padding: 10px;
+}
+
+#Projects h2 {
+  text-align: center;
+  background-color: rgb(184, 184, 184);
+  padding: 10px;
+}
+table th{
+    text-align: left;
+}
+
+table td{
+    width: 50%;
+}
