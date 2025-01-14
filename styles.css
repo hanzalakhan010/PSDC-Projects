@@ -1,17 +1,23 @@
 #Projects {
-  border: 0.5px solid grey;
-  padding: 10px;
+    display: grid;
+    border: 0.5px solid grey;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+
 }
 
-#Projects h2 {
+h2 {
   text-align: center;
   background-color: rgb(184, 184, 184);
   padding: 10px;
 }
-table th{
-    text-align: left;
+a{
+    text-decoration: none;
 }
 
-table td{
-    width: 50%;
+#Projects p{
+    width: 60%;
+    background-color: aquamarine;
+    padding: 10px;
+    text-align: center;
 }
