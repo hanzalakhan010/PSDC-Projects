@@ -4,17 +4,23 @@ function addExpense(){
     let expense = document.getElementById('expense').value
     let amount  = document.getElementById('amount').value
     let date = document.getElementById('date').value
-    expenses.push({expense,amount,date})
-    total += parseInt(amount)
-    document.getElementById('expenses').innerHTML+=`
-    <tr>
-        <td>${expense}</td>
-        <td>${amount}</td>
-        <td>${date}</td>
-    </tr>    
-    `
-    document.getElementById('total').innerHTML = `Total: ${total}`
-    localStorage.setItem('expenses',JSON.stringify(expenses))
+    if (! isNaN(amount)){
+        expenses.push({expense,amount,date})
+        total += parseInt(amount)
+        document.getElementById('expenses').innerHTML+=`
+        <tr>
+            <td>${expense}</td>
+            <td>${amount}</td>
+            <td>${date}</td>
+        </tr>    
+        `
+        document.getElementById('total').innerHTML = `Total: ${total}`
+        localStorage.setItem('expenses',JSON.stringify(expenses))
+    }
+    else{
+        alert()
+    }
+
 }
 
 function LoadExpenses(){

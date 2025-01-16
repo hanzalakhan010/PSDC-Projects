@@ -29,8 +29,11 @@ h1{
 }
 table{
     width: 100%;
-    margin-top: 10px;
+    margin: 40px 0px;
     text-align: center;
+    border: 1px solid black;
+  height: 100px;
+
 }
 table td{
     border-right: .2px solid gray;
@@ -41,3 +44,9 @@ tfoot{
     bottom: 2px;
     right: 10px;
 }
+tbody{
+    height:400px;
+    overflow:auto;
+    overflow-x:hidden;
+    border: 1px solid black;
+  }
