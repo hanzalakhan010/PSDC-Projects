@@ -1,3 +1,6 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
 h1{
     text-align: center;
 }
@@ -23,4 +26,11 @@ h1{
 #entry button:hover{
     cursor: pointer;
     background-color:#3eb9ad ;
+}
+table{
+    width: 100%;
+    margin-top: 10px;
+}
+table td{
+    border-right: .2ps xolid gray;
 }
