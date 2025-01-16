@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    main {
+        translate: 0 200px;
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        gap: 5px;
+        flex-direction: row;
+        position: relative;
+    }
+
+    .beads {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: black;
+        animation-name: transverse;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        position: relative;
+    }
+
+    @keyframes longitudinal {
+        0% {
+            left: 0.0px
+        }
+
+        1% {
+            left: 15.648089810389331px
+        }
+
+        2% {
+            left: 29.724038426241105px
+        }
+
+        3% {
+            left: 40.81365542947107px
+        }
+
+        4% {
+            left: 47.80278286638148px
+        }
+
+        5% {
+            left: 49.989233103172815px
+        }
+
+        6% {
+            left: 47.15333661284737px
+        }
+
+        7% {
+            left: 39.58001185829156px
+        }
+
+        8% {
+            left: 28.0301399419607px
+        }
+
+        9% {
+            left: 13.664119970155939px
+        }
+
+        10% {
+            left: -2.074714584929345px
+        }
+
+        11% {
+            left: -17.605105534092193px
+        }
+
+        12% {
+            left: -31.366736718983297px
+        }
+
+        13% {
+            left: -41.97699674409317px
+        }
+
+        14% {
+            left: -48.36988796546946px
+        }
+
+        15% {
+            left: -49.90312574881444px
+        }
+
+        16% {
+            left: -46.42266788773578px
+        }
+
+        17% {
+            left: -38.27819100382476px
+        }
+
+        18% {
+            left: -26.28795903678948px
+        }
+
+        19% {
+            left: -11.656613437174391px
+        }
+
+        20% {
+            left: 4.1458554366192075px
+        }
+
+        21% {
+            left: 19.531796146433344px
+        }
+
+        22% {
+            left: 32.95540524279199px
+        }
+
+        23% {
+            left: 43.06803192579094px
+        }
+
+        24% {
+            left: 48.853675061364186px
+        }
+
+        25% {
+            left: 49.731059361566416px
+        }
+
+        26% {
+            left: 45.61203528108555px
+        }
+
+        27% {
+            left: 36.9104352759391px
+        }
+
+        28% {
+            left: 24.500496648714325px
+        }
+
+        29% {
+            left: 9.62902817760416px
+        }
+
+        30% {
+            left: -6.209854977649978px
+        }
+
+        31% {
+            left: -21.424842888132083px
+        }
+
+        32% {
+            left: -34.48730748752199px
+        }
+
+        33% {
+            left: -44.08488164681364px
+        }
+
+        34% {
+            left: -49.25331082207969px
+        }
+
+        35% {
+            left: -49.4733303288798px
+        }
+
+        36% {
+            left: -44.722835122161605px
+        }
+
+        37% {
+            left: -35.479100658509985px
+        }
+
+        38% {
+            left: -22.670831713892206px
+        }
+
+        39% {
+            left: -7.584856743573161px
+        }
+
+        40% {
+            left: 8.263157931638274px
+        }
+
+        41% {
+            left: 23.280984952080846px
+        }
+
+        42% {
+            left: 35.95980472396619px
+        }
+
+        43% {
+            left: 45.02579436520271px
+        }
+
+        44% {
+            left: 49.568106867820426px
+        }
+
+        45% {
+            left: 49.13038259365526px
+        }
+
+        46% {
+            left: 43.756599074252776px
+        }
+
+        47% {
+            left: 33.986652651195215px
+        }
+
+        48% {
+            left: 20.802115863126605px
+        }
+
+        49% {
+            left: 5.527620257193132px
+        }
+
+        50% {
+            left: -10.302227447264457px
+        }
+
+        51% {
+            left: -25.097025100144094px
+        }
+
+        52% {
+            left: -37.37036054911414px
+        }
+
+        53% {
+            left: -45.88914934185422px
+        }
+
+        54% {
+            left: -49.79752095672792px
+        }
+
+        55% {
+            left: -48.70280688954347px
+        }
+
+        56% {
+            left: -42.71499149635408px
+        }
+
+        57% {
+            left: -32.43566202256727px
+        }
+
+        58% {
+            left: -18.897567993127232px
+        }
+
+        59% {
+            left: -3.460862345364012px
+        }
+
+        60% {
+            left: 12.323551190563176px
+        }
+
+        61% {
+            left: 26.869835170458973px
+        }
+
+        62% {
+            left: 38.71654525515219px
+        }
+
+        63% {
+            left: 46.67345943227144px
+        }
+
+        64% {
+            left: 49.94115791890217px
+        }
+
+        65% {
+            left: 48.19133972339558px
+        }
+
+        66% {
+            left: 41.5998065762786px
+        }
+
+        67% {
+            left: 30.82880038191851px
+        }
+
+        68% {
+            left: 16.960468721902533px
+        }
+
+        69% {
+            left: 1.3881430358128282px
+        }
+
+        70% {
+            left: -14.323647394980913px
+        }
+
+        71% {
+            left: -28.596361465749613px
+        }
+
+        72% {
+            left: -39.9960400146783px
+        }
+
+        73% {
+            left: -47.377373648197555px
+        }
+
+        74% {
+            left: -49.9987703370888px
+        }
+
+        75% {
+            left: -47.596862106617245px
+        }
+
+        76% {
+            left: -40.41296524013628px
+        }
+
+        77% {
+            left: -29.168835577365414px
+        }
+
+        78% {
+            left: -14.994154737835439px
+        }
+
+        79% {
+            left: 0.6869673751190676px
+        }
+
+        80% {
+            left: 16.299070858782887px
+        }
+
+        81% {
+            left: 30.273630013376827px
+        }
+
+        82% {
+            left: 41.206640874924894px
+        }
+
+        83% {
+            left: 47.99967948471781px
+        }
+
+        84% {
+            left: 49.97025897285986px
+        }
+
+        85% {
+            left: 46.92039803761018px
+        }
+
+        86% {
+            left: 39.15651184350428px
+        }
+
+        87% {
+            left: 27.458626928180724px
+        }
+
+        88% {
+            left: 13.002013052177904px
+        }
+
+        89% {
+            left: -2.76089447237442px
+        }
+
+        90% {
+            left: -18.246418879473712px
+        }
+
+        91% {
+            left: -31.89875168805835px
+        }
+
+        92% {
+            left: -42.34626255410628px
+        }
+
+        93% {
+            left: -48.539305008820556px
+        }
+
+        94% {
+            left: -49.85567293755375px
+        }
+
+        95% {
+            left: -46.16311273791692px
+        }
+
+        96% {
+            left: -37.832610649988055px
+        }
+
+        97% {
+            left: -25.701120299564895px
+        }
+
+        98% {
+            left: -10.987475164863566px
+        }
+
+        99% {
+            left: 4.830065879175627px
+        }
+    }
+
+    @keyframes transverse {
+        0% {
+            top: 0.0px
+        }
+
+        1% {
+            top: 31.296179620778663px
+        }
+
+        2% {
+            top: 59.44807685248221px
+        }
+
+        3% {
+            top: 81.62731085894214px
+        }
+
+        4% {
+            top: 95.60556573276295px
+        }
+
+        5% {
+            top: 99.97846620634563px
+        }
+
+        6% {
+            top: 94.30667322569474px
+        }
+
+        7% {
+            top: 79.16002371658313px
+        }
+
+        8% {
+            top: 56.0602798839214px
+        }
+
+        9% {
+            top: 27.328239940311878px
+        }
+
+        10% {
+            top: -4.14942916985869px
+        }
+
+        11% {
+            top: -35.210211068184385px
+        }
+
+        12% {
+            top: -62.733473437966595px
+        }
+
+        13% {
+            top: -83.95399348818634px
+        }
+
+        14% {
+            top: -96.73977593093892px
+        }
+
+        15% {
+            top: -99.80625149762888px
+        }
+
+        16% {
+            top: -92.84533577547155px
+        }
+
+        17% {
+            top: -76.55638200764952px
+        }
+
+        18% {
+            top: -52.57591807357896px
+        }
+
+        19% {
+            top: -23.313226874348782px
+        }
+
+        20% {
+            top: 8.291710873238415px
+        }
+
+        21% {
+            top: 39.06359229286669px
+        }
+
+        22% {
+            top: 65.91081048558398px
+        }
+
+        23% {
+            top: 86.13606385158188px
+        }
+
+        24% {
+            top: 97.70735012272837px
+        }
+
+        25% {
+            top: 99.46211872313283px
+        }
+
+        26% {
+            top: 91.2240705621711px
+        }
+
+        27% {
+            top: 73.8208705518782px
+        }
+
+        28% {
+            top: 49.00099329742865px
+        }
+
+        29% {
+            top: 19.25805635520832px
+        }
+
+        30% {
+            top: -12.419709955299956px
+        }
+
+        31% {
+            top: -42.84968577626417px
+        }
+
+        32% {
+            top: -68.97461497504398px
+        }
+
+        33% {
+            top: -88.16976329362728px
+        }
+
+        34% {
+            top: -98.50662164415938px
+        }
+
+        35% {
+            top: -98.9466606577596px
+        }
+
+        36% {
+            top: -89.44567024432321px
+        }
+
+        37% {
+            top: -70.95820131701997px
+        }
+
+        38% {
+            top: -45.34166342778441px
+        }
+
+        39% {
+            top: -15.169713487146321px
+        }
+
+        40% {
+            top: 16.526315863276547px
+        }
+
+        41% {
+            top: 46.56196990416169px
+        }
+
+        42% {
+            top: 71.91960944793237px
+        }
+
+        43% {
+            top: 90.05158873040541px
+        }
+
+        44% {
+            top: 99.13621373564085px
+        }
+
+        45% {
+            top: 98.26076518731053px
+        }
+
+        46% {
+            top: 87.51319814850555px
+        }
+
+        47% {
+            top: 67.97330530239043px
+        }
+
+        48% {
+            top: 41.60423172625321px
+        }
+
+        49% {
+            top: 11.055240514386265px
+        }
+
+        50% {
+            top: -20.604454894528914px
+        }
+
+        51% {
+            top: -50.19405020028819px
+        }
+
+        52% {
+            top: -74.74072109822828px
+        }
+
+        53% {
+            top: -91.77829868370844px
+        }
+
+        54% {
+            top: -99.59504191345584px
+        }
+
+        55% {
+            top: -97.40561377908693px
+        }
+
+        56% {
+            top: -85.42998299270816px
+        }
+
+        57% {
+            top: -64.87132404513454px
+        }
+
+        58% {
+            top: -37.795135986254465px
+        }
+
+        59% {
+            top: -6.921724690728024px
+        }
+
+        60% {
+            top: 24.647102381126352px
+        }
+
+        61% {
+            top: 53.73967034091795px
+        }
+
+        62% {
+            top: 77.43309051030438px
+        }
+
+        63% {
+            top: 93.34691886454289px
+        }
+
+        64% {
+            top: 99.88231583780434px
+        }
+
+        65% {
+            top: 96.38267944679116px
+        }
+
+        66% {
+            top: 83.1996131525572px
+        }
+
+        67% {
+            top: 61.65760076383702px
+        }
+
+        68% {
+            top: 33.920937443805066px
+        }
+
+        69% {
+            top: 2.7762860716256563px
+        }
+
+        70% {
+            top: -28.647294789961826px
+        }
+
+        71% {
+            top: -57.192722931499226px
+        }
+
+        72% {
+            top: -79.9920800293566px
+        }
+
+        73% {
+            top: -94.75474729639511px
+        }
+
+        74% {
+            top: -99.9975406741776px
+        }
+
+        75% {
+            top: -95.19372421323449px
+        }
+
+        76% {
+            top: -80.82593048027256px
+        }
+
+        77% {
+            top: -58.33767115473083px
+        }
+
+        78% {
+            top: -29.988309475670878px
+        }
+
+        79% {
+            top: 1.3739347502381352px
+        }
+
+        80% {
+            top: 32.598141717565774px
+        }
+
+        81% {
+            top: 60.547260026753655px
+        }
+
+        82% {
+            top: 82.41328174984979px
+        }
+
+        83% {
+            top: 95.99935896943562px
+        }
+
+        84% {
+            top: 99.94051794571972px
+        }
+
+        85% {
+            top: 93.84079607522035px
+        }
+
+        86% {
+            top: 78.31302368700857px
+        }
+
+        87% {
+            top: 54.91725385636145px
+        }
+
+        88% {
+            top: 26.00402610435581px
+        }
+
+        89% {
+            top: -5.52178894474884px
+        }
+
+        90% {
+            top: -36.492837758947424px
+        }
+
+        91% {
+            top: -63.7975033761167px
+        }
+
+        92% {
+            top: -84.69252510821256px
+        }
+
+        93% {
+            top: -97.07861001764111px
+        }
+
+        94% {
+            top: -99.7113458751075px
+        }
+
+        95% {
+            top: -92.32622547583384px
+        }
+
+        96% {
+            top: -75.66522129997611px
+        }
+
+        97% {
+            top: -51.40224059912979px
+        }
+
+        98% {
+            top: -21.974950329727132px
+        }
+
+        99% {
+            top: 9.660131758351254px
+        }
+    }
+
+    #controls {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        bottom: 0px;
+        right: 0px;
+    }
+</style>
+
+<body>
+    <main>
+        <div class='beads' style="animation-delay: .025s;" id='1'></div>
+        <div class='beads' style="animation-delay: .05s;" id='2'></div>
+        <div class='beads' style="animation-delay: .075s;" id='3'></div>
+        <div class='beads' style="animation-delay: .1s;" id='4'></div>
+        <div class='beads' style="animation-delay: .125s;" id='5'></div>
+        <div class='beads' style="animation-delay: .15s ;" id='6'></div>
+        <div class='beads' style="animation-delay: .175s;" id='7'></div>
+        <div class='beads' style="animation-delay: .2s;" id='8'></div>
+        <div class='beads' style="animation-delay: .225s;" id='9'></div>
+        <div class='beads' style="animation-delay: .25s;" id='10'></div>
+        <div class='beads' style="animation-delay: .275s;" id='11'></div>
+        <div class='beads' style="animation-delay: .3s;" id='12'></div>
+        <div class='beads' style="animation-delay: .325s;" id='13'></div>
+        <div class='beads' style="animation-delay: .35s;" id='14'></div>
+        <div class='beads' style="animation-delay: .375s;" id='15'></div>
+        <div class='beads' style="animation-delay: .4s;" id='16'></div>
+        <div class='beads' style="animation-delay: .425s;" id='17'></div>
+        <div class='beads' style="animation-delay: .45s;" id='18'></div>
+        <div class='beads' style="animation-delay: .475s;" id='19'></div>
+        <div class='beads' style="animation-delay: .5s;" id='20'></div>
+        <div class='beads' style="animation-delay: .525s;" id='21'></div>
+        <div class='beads' style="animation-delay: .55s;" id='22'></div>
+        <div class='beads' style="animation-delay: .575s;" id='23'></div>
+        <div class='beads' style="animation-delay: .6s;" id='24'></div>
+        <div class='beads' style="animation-delay: .625s;" id='25'></div>
+        <div class='beads' style="animation-delay: .65s;" id='26'></div>
+        <div class='beads' style="animation-delay: .675s;" id='27'></div>
+        <div class='beads' style="animation-delay: .7s;" id='28'></div>
+        <div class='beads' style="animation-delay: .725s;" id='29'></div>
+        <div class='beads' style="animation-delay: .75s;" id='30'></div>
+        <div class='beads' style="animation-delay: .775s;" id='31'></div>
+        <div class='beads' style="animation-delay: .8s;" id='32'></div>
+        <div class='beads' style="animation-delay: .825s;" id='33'></div>
+        <div class='beads' style="animation-delay: .85s;" id='34'></div>
+        <div class='beads' style="animation-delay: .875s;" id='35'></div>
+        <div class='beads' style="animation-delay: .9s;" id='36'></div>
+        <div class='beads' style="animation-delay: .925s;" id='37'></div>
+        <div class='beads' style="animation-delay: .95s;" id='38'></div>
+        <div class='beads' style="animation-delay: .975s;" id='39'></div>
+        <div class='beads' style="animation-delay: 1s;" id='40'></div>
+
+    </main>
+    <div id='controls'>
+        <div>
+            <div>
+                <label for="longitudinal">Longitudinal</label>
+                <input type="radio" id='longitudinal' name='wave' onclick="longitudinal()">
+            </div>
+            <label for='transverse'>Transverse</label>
+            <input type="radio" checked id='transverse' name='wave' onclick="transverse()">
+        </div>
+        <label for='amplitude'>amplitude</label>
+        <input type="range" id='amplitude' onchange="changeAmplitude()">
+        <label for='frequency'>Frequency</label>
+        <input type="range" id='frequency' onchange="changeFrequency()">
+        <span id='frequencyText'>0Hz</span>
+    </div>
+
+</body>
+<script>
+    function changeAmplitude() {
+        let amplitude = document.getElementById('amplitude').ariaValueMax
+
+    }
+    function changeFrequency() {
+        let freq = document.getElementById('frequency').value
+        let t = 1000 / freq
+        document.getElementById('frequencyText').innerHTML = freq / 10 + 'Hz'
+        let arr = document.querySelectorAll('.beads')
+        for (i = 0; i < 40; i++) {
+            arr[i].style["-webkit-animation-duration"] = t / 10 + 's'
+
+        }
+    }
+    function transverse() {
+        let arr = document.querySelectorAll('.beads')
+        for (i = 0; i < 40; i++) {
+            arr[i].style["-webkit-animation-name"] = 'transverse'
+
+        }
+    }
+    function longitudinal() {
+        let arr = document.querySelectorAll('.beads')
+        for (i = 0; i < 40; i++) {
+            arr[i].style["-webkit-animation-name"] = 'longitudinal'
+
+        }
+    }
+</script>
+
+</html>
