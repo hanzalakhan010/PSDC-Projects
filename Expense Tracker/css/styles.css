@@ -31,9 +31,6 @@ table{
     width: 100%;
     margin: 40px 0px;
     text-align: center;
-    border: 1px solid black;
-  height: 100px;
-
 }
 table td{
     border-right: .2px solid gray;
@@ -49,4 +46,14 @@ tbody{
     overflow:auto;
     overflow-x:hidden;
     border: 1px solid black;
-  }
+}
+thead{
+    position: sticky;
+    top: 0px;
+    background-color: #4cdbcd;
+}
+
+.my-table{
+    height: 70vh;
+    overflow: scroll;
+}
