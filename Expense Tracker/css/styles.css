@@ -35,13 +35,9 @@ table{
 table td{
     border-right: .2px solid gray;
 }
-
-table{
-    height: 60vh;
-    overflow-y: scroll;
-}
 tfoot{
     position: fixed;
+    background-color: aquamarine;
     bottom: 2px;
-    
+    right: 10px;
 }
