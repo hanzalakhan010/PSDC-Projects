@@ -36,7 +36,7 @@ function previous(){
 }
 function toggleAnswer(){
   console.log('ffdfs')
-  if (document.getElementById('ans').style.visibility = 'visible'){
+  if (document.getElementById('ans').style.visibility == 'visible'){
       document.getElementById('ans').style.visibility = 'hidden'
       document.getElementById('que').style.visibility = 'visible'
 

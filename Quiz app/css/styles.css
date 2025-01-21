@@ -34,9 +34,10 @@ h1{
 
 #showbtn{
     position: absolute ;
-    bottom: 0px;
+    bottom: 20px;
     margin: 10px;
     right: 100px; 
+    font-size: larger;
 }
 #hintbtn{
     width: 40px;
@@ -61,7 +62,7 @@ button:hover{
     background-color: rgb(126, 171, 255);
 
 }
-#hint{
+#hint,#ans{
     padding: 10px;
     background-color: rgb(190, 190, 190);
 }
