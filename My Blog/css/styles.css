@@ -3,19 +3,21 @@
     font-family: 'Courier New', Courier, monospace;
 
 }
-header{
+header,nav{
     background-color: aquamarine;
-
 }
 header h1 {
     padding-top: 10px;
     text-align: center;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     /* margin-top: 10px; */
 }
-header nav {
-    width: 100%;
 
+header{
+    width: 100%;
+}
+a{
+    text-decoration: none;
 }
 ul{
     display: grid;
@@ -42,4 +44,59 @@ footer{
     bottom: 0px;
     background-color: aquamarine;
     text-align: center;
+}
+#toggler{
+    width: 50px;
+    display: none;
+}
+
+@media only screen and (min-width:660px) {
+    nav{
+        display: block;
+    }
+}
+
+@media only screen and (max-width:810px) {
+    header h1 {
+        font-size: 55px;
+        }
+    header nav{
+        font-size: 40px;
+    }
+    section h2{
+        font-size: 35px;
+    }
+    section p{
+        font: 25px;
+    }
+    footer{
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width:660px) {
+    nav{
+        display: none;
+    }
+    nav ul{
+        display: inline !important;
+    } 
+    nav ul li {
+        display: block;
+    }
+    a{
+        font-size: 25px;
+    }
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    header h1 {
+        display: inline-block;
+    }
+    header img{
+        display: inline-block !important ;
+    }
+
+
 }
