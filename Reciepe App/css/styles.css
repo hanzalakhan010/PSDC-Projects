@@ -20,3 +20,18 @@ footer p{
     text-align: center;
     background-color: aquamarine !important;
 }
+
+@media only screen and (max-width:800px){
+  h1{
+    font-size: 40px;
+  }
+  ol ,p{
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width:660px){
+  h1{
+    font-size: 30px;
+  }
+}
