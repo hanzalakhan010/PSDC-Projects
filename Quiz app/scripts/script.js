@@ -34,8 +34,21 @@ function previous(){
         setQuestion();
       } 
 }
-function showAnswer(){
+function toggleAnswer(){
+  console.log('ffdfs')
+  if (document.getElementById('ans').style.visibility = 'visible'){
+      document.getElementById('ans').style.visibility = 'hidden'
+      document.getElementById('que').style.visibility = 'visible'
+
+
+  }
+  else{
     document.getElementById('ans').style.visibility = 'visible'
+    document.getElementById('hint').style.visibility = 'hidden'
+    document.getElementById('que').style.visibility = 'hidden'
+
+    
+  }
 }
 function showHint(){
     document.getElementById('hint').style.visibility = 'visible'
