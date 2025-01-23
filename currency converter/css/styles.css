@@ -30,3 +30,21 @@ h1{
     padding: 10px;
     background-color: aquamarine;
 }
+@media only screen and (max-width:760px){
+    h1{
+        background-color: blanchedalmond;
+    }    
+    select ,input{
+        font-size: large;
+    }
+}
+@media only screen and (max-width:410px){
+    select,option{
+        width: 190px;
+        text-overflow: clip;
+    }
+    select ,input{
+        font-size: medium;
+    }
+
+}

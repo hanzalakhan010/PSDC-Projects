@@ -13,16 +13,16 @@
     <h1>Currency Converter</h1>
     <div id = 'main'>
         <div id = 'input_currency'>
-            <input type="number" id = 'currency'>
             <select id = 'from'>
                 <option>Select currency</option>
             </select>
+            <input type="number" id = 'currency'>
         </div>
         <div id = 'ouput_currency'>
-            <input type="number" id = 'currency_converted' disabled>
             <select id = 'to'>
                 <option>Select currency</option>
             </select>
+            <input type="number" id = 'currency_converted' disabled>
         </div>
         <!-- <div></div> -->
         <!-- <button onclick="convert()">Convert</button> -->
@@ -32,5 +32,7 @@
 loadCurrencies()
 fetchRates()
 document.getElementById('currency').addEventListener('input',convert)
+document.getElementById('to').addEventListener('input',convert)
+document.getElementById('from').addEventListener('input',convert)
 </script>
 </html>
