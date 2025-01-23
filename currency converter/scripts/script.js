@@ -31,3 +31,4 @@ function convert(){
     let convereted_curr = ((rates['USD']/rates[from])*rates[to]) * currency
     document.getElementById('currency_converted').value =convereted_curr.toFixed(3)
 }
+document.getElementById('currency').addEventListener('input',convert)

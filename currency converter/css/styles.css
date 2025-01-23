@@ -1,16 +1,18 @@
 select{
-    margin: 20px;
-    font-size: large;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: x-large;
 
 }
 input{
-    margin:20px;
+    margin-top:20px;
+    margin-bottom:20px;
     font-size: x-large;
-    width: 80%;
+    width: 40%;
+    display: inline-block;
 }
 #main{
-    display: grid;
-    grid-template-columns: auto auto;
+    margin-top: 10px;
 }
 body{
     display: flex;
@@ -20,4 +22,11 @@ body{
 button{
     margin: 20px;
     font-size: large;
+}
+h1{
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    padding: 10px;
+    background-color: aquamarine;
 }

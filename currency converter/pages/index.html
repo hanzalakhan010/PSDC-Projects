@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
 <html lang="en">
 <head>
     <title>Currency Converter</title>
@@ -9,21 +12,25 @@
 <body>
     <h1>Currency Converter</h1>
     <div id = 'main'>
-        <input type="number" id = 'currency'>
-        <input type="number" id = 'currency_converted' disabled>
-        <select id = 'from'>
-            <option>Select currency</option>
-        </select>
-        <select id = 'to'>
-            <option>Select currency</option>
-
-        </select>
-        <div></div>
-        <button onclick="convert()">Convert</button>
+        <div id = 'input_currency'>
+            <input type="number" id = 'currency'>
+            <select id = 'from'>
+                <option>Select currency</option>
+            </select>
+        </div>
+        <div id = 'ouput_currency'>
+            <input type="number" id = 'currency_converted' disabled>
+            <select id = 'to'>
+                <option>Select currency</option>
+            </select>
+        </div>
+        <!-- <div></div> -->
+        <!-- <button onclick="convert()">Convert</button> -->
     </div>
 </body>
 <script>
 loadCurrencies()
 fetchRates()
+document.getElementById('currency').addEventListener('input',convert)
 </script>
 </html>
