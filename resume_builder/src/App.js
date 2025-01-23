@@ -10,7 +10,22 @@ class App extends Component {
       email: "",
       education: [],
       skills: [],
-      projects: [{ name: "Bloggir", tech: "", desc: "" }],
+      projects: [
+        {
+          name: "Bloggir",
+          link: "",
+          tech: "Python, Flask, JavaScript, HTML, Bootstrap",
+          desc: `Blogging website,-write/delete/edit a blog,- blog saved on Remote database - user can
+                login/create account- like/bookmark/comment functionality`,
+        },
+        {
+          name: "ABloggir",
+          link: "",
+          tech: "Python, Flask, JavaScript, HTML, Bootstrap",
+          desc: `Blogging website,-write/delete/edit a blog,- blog saved on Remote database - user can
+                login/create account- like/bookmark/comment functionality`,
+        }
+      ],
       certifications: [],
       honors: [],
       preview: false,
@@ -26,28 +41,32 @@ class App extends Component {
         ) : (
           <div id="input_grid">
             <div>
-              <label labelFor="name">Name</label>
+              <label labelfor="name">Name</label>
               <input placeholder="Enter your Name" id="name"></input>
             </div>
             <div>
-              <label labelFor="tel">Adverb</label>
+              <label labelfor="tel">Adverb</label>
               <input placeholder="adverb" id="adverb"></input>
             </div>
             <div>
-              <label labelFor="tel">Telephone</label>
+              <label labelfor="tel">Telephone</label>
               <input placeholder="Telephone" id="tel"></input>
             </div>
             <div>
-              <label labelFor="tel">Email</label>
+              <label labelfor="tel">Email</label>
               <input placeholder="Email" id="email"></input>
             </div>
             <div>
               <h3>Projects</h3>
               {this.state.projects.map((project) => (
-                <div className = 'project'>
-                  <div>{project.name}</div>
-                  <div>{project.desc}</div>
-                  <div>{project.tech}</div>
+                <div className="project" key={project.name}>
+                  <input placeholder="Project Name"
+                   value = {project.name}
+                   onChange ={e=>this.setState({project:e.target.value})}
+                   ></input>
+                  <input placeholder="Link to Project"></input>
+                  <input placeholder="Project Description"></input>
+                  <input placeholder="Project Stack/technologies used"></input>
                 </div>
               ))}
             </div>
