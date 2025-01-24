@@ -34,23 +34,23 @@
       <hr>
       <div>
         <h2>SKILLS</h3>
-        <input class="skills" placeholder="Programming Languages">
-        <input class="skills" placeholder="Libraries/Frameworks">
-        <input class="skills" placeholder="Tools / Platforms ">
-        <input class="skills" placeholder="Databases">
+          <input class="skills" placeholder="Programming Languages">
+          <input class="skills" placeholder="Libraries/Frameworks">
+          <input class="skills" placeholder="Tools / Platforms ">
+          <input class="skills" placeholder="Databases">
       </div>
       <hr>
       <div>
         <h2>PROJECTS / OPEN-SOURCE</h3>
-        <div class="projects">
-          <div class="project">
-            <input class='prName' placeholder="Project Name"></input>
-            <input class='prLink' placeholder="Link to Project"></input>
-            <input class='prDesc' placeholder="Project Description"></input>
-            <input class='prTech' placeholder="Project Stack/technologies used"></input>
+          <div class="projects">
+            <div class="project">
+              <input class='prName' placeholder="Project Name"></input>
+              <input class='prLink' placeholder="Link to Project"></input>
+              <input class='prDesc' placeholder="Project Description"></input>
+              <input class='prTech' placeholder="Project Stack/technologies used"></input>
+            </div>
           </div>
-        </div>
-        <button onclick="addProject()">Add Project</button>
+          <button onclick="addProject()">Add Project</button>
       </div>
       <hr>
       <div>
@@ -60,18 +60,15 @@
             <input type="text" placeholder="TITLE">
             <input type="text" placeholder="AWARDING BODY">
           </div>
-          <div class="certificate">
-            <input type="text" placeholder="TITLE">
-            <input type="text" placeholder="AWARDING BODY">
-          </div>
-        </div>
+          
       </div>
 
+      <button>Preview</button>
     </div>
   </div>
 </body>
 <script>
-  // document.querySelector('input').addEventListener('input', saveProgress)
+  document.querySelector('input').addEventListener('input', saveProgress)
 </script>
 
 </html>
