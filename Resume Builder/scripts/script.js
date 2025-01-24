@@ -24,6 +24,6 @@ function saveProgress(){
     let projects = document.getElementsByClassName('project')
     let skills = document.getElementsByClassName('skills')
     let certificates = document.getElementsByClassName('certificate')
-
+    
 
 }
