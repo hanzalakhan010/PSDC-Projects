@@ -17,6 +17,7 @@ function addCertifate(){
     `
 }
 function saveProgress(){
+    let certificates_array = []
     let name = document.getElementById('name').value
     let adverb= document.getElementById('adverb').value
     let tel = document.getElementById('tel').value
@@ -24,6 +25,13 @@ function saveProgress(){
     let projects = document.getElementsByClassName('project')
     let skills = document.getElementsByClassName('skills')
     let certificates = document.getElementsByClassName('certificate')
-    
+    localStorage.setItem('name',name)
+    localStorage.setItem('adverb',adverb)
+    localStorage.setItem('tel',tel)
+    localStorage.setItem('email',email)
+    for (certificate in certificates){
+        // certificates_array.push([certificates[certificate].children[0].value:certificates[certificate].children[1]])
+        console.log(certificate)
+    }
 
 }
