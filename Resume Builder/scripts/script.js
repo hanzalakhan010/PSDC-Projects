@@ -9,6 +9,11 @@ function addProject(){
     `
 }
 function saveProgress(){
-    
-
+    // let name = document.getElementById('name').value
+    // let adverb= document.getElementById('adverb').value
+    // let tel = document.getElementById('tel').value
+    // let email = document.getElementById('email').value
+    // let projects = document.getElementsByClassName('project')
+    // let skills = document.getElementsByClassName('skills')
+    // let certificates = document.getElementsByClassName('certificate')
 }

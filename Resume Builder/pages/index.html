@@ -31,8 +31,17 @@
         <label for="email">Email</label>
         <input placeholder="Email" id="email"></input>
       </div>
+      <hr>
       <div>
-        <h3>Projects</h3>
+        <h2>SKILLS</h3>
+        <input class="skills" placeholder="Programming Languages">
+        <input class="skills" placeholder="Libraries/Frameworks">
+        <input class="skills" placeholder="Tools / Platforms ">
+        <input class="skills" placeholder="Databases">
+      </div>
+      <hr>
+      <div>
+        <h2>PROJECTS / OPEN-SOURCE</h3>
         <div class="projects">
           <div class="project">
             <input class='prName' placeholder="Project Name"></input>
@@ -43,12 +52,26 @@
         </div>
         <button onclick="addProject()">Add Project</button>
       </div>
+      <hr>
+      <div>
+        <h2>CERTIFICATIONS</h2>
+        <div class="certifications">
+          <div class="certificate">
+            <input type="text" placeholder="TITLE">
+            <input type="text" placeholder="AWARDING BODY">
+          </div>
+          <div class="certificate">
+            <input type="text" placeholder="TITLE">
+            <input type="text" placeholder="AWARDING BODY">
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </body>
 <script>
-  document.querySelector('input').addEventListener('input', saveProgress)
-
+  // document.querySelector('input').addEventListener('input', saveProgress)
 </script>
 
 </html>
