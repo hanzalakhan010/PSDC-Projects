@@ -1,20 +1,17 @@
 function addProject() {
-    document.getElementById('projects').innerHTML += `
-        <div class = 'project'>
-            <input class = 'prName' placeholder="Project Name"></input>
-            <input class = 'prLink'placeholder="Link to Project"></input>
-            <input class = 'prDesc' placeholder="Project Description"></input>
-            <input class = 'prTech'placeholder="Project Stack/technologies used"></input>
-        </div>
-    `
+    let cloned = document.querySelector('.project').cloneNode(true)
+    cloned.children[0].value = ''
+    cloned.children[1].value = ''
+    cloned.children[2].value = ''
+    cloned.children[3].value = ''
+    document.getElementById('projects').appendChild(cloned)
 }
 function addCertifate() {
-    document.getElementById('certifications').innerHTML += `
-        <div class="certificate">
-            <input type="text" placeholder="TITLE">
-            <input type="text" placeholder="AWARDING BODY">
-        </div>
-    `
+    let cloned = document.querySelector('.certificate').cloneNode(true)
+    cloned.children[0].value = ''
+    cloned.children[1].value = ''
+    document.getElementById('certifications').appendChild(cloned)
+    
 }
 function saveProgress() {
     let certificates_array = []
