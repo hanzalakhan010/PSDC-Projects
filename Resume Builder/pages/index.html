@@ -71,7 +71,10 @@
   </div>
 </body>
 <script>
-  // document.querySelector('input').addEventListener('input', saveProgress)
+//   document.addEventListener("DOMContentLoaded", function(event){
+//     document.qu('input').addEventListener('input', saveProgress)
+// });
+Array.from(document.querySelectorAll('input'),ele => ele.addEventListener('input', saveProgress))
 </script>
 
 </html>

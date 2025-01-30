@@ -27,7 +27,6 @@ function saveProgress() {
     localStorage.setItem('tel', tel)
     localStorage.setItem('email', email)
     for (let index=0;index<certificates.length;index++){
-        console.log(index)
         certificates_array.push([certificates.item(index).children.item(0).value, certificates.item(index).children.item(1).value])
     };
     localStorage.setItem('certificates', JSON.stringify(certificates_array))
