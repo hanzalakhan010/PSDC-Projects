@@ -29,7 +29,7 @@
     flex-direction: column;
 
   }
-  .projects{
+  #projects{
     margin-bottom: 4px;
     padding: 5px;
     border: 1px solid gray;
@@ -76,7 +76,7 @@
     margin-top: 5px;
     margin-bottom: 5px;
   }
-  .certifications > div{
+  #certifications > div{
     display: grid;
     grid-template-columns: 2fr  1fr ;
     gap: 5px;

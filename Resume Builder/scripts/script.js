@@ -1,5 +1,5 @@
 function addProject() {
-    document.querySelector('.projects').innerHTML += `
+    document.getElementById('projects').innerHTML += `
         <div class = 'project'>
             <input class = 'prName' placeholder="Project Name"></input>
             <input class = 'prLink'placeholder="Link to Project"></input>
@@ -9,7 +9,7 @@ function addProject() {
     `
 }
 function addCertifate() {
-    document.querySelector('.certifications').innerHTML += `
+    document.getElementById('certifications').innerHTML += `
         <div class="certificate">
             <input type="text" placeholder="TITLE">
             <input type="text" placeholder="AWARDING BODY">
