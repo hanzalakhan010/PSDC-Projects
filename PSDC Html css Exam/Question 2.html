@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 2</title>
+    <style>
+      .photo-grid {
+        /* Your CSS code here */
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+      }
+      .photo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .photo img {
+        /* Your CSS code here */
+        width: 250px;
+      }
+      .photo:hover img {
+        /* Your CSS code here */
+        transform: scale(2);
+      }
+
+      @media only screen and (max-width: 1024px) and (min-width: 430px) {
+        .photo-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      @media only screen and (max-width: 430px) {
+        .photo-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="photo-grid">
+      <div class="photo">
+        <img
+          src=" https://www.gulahmedshop.com/media/catalog/product/e/a/earth.jpg?optimize=medium&fit=bounds&height=1050&width=700"
+        />
+        <caption>
+          Earth perfume for men
+        </caption>
+      </div>
+
+      <div class="photo">
+        <img
+          src="https://www.gulahmedshop.com/media/catalog/product/f/i/fire.jpg?optimize=medium&fit=bounds&height=1050&width=700"
+        />
+        <caption>
+          Fire Perfume For Men
+        </caption>
+      </div>
+      <div class="photo">
+        <img
+          src=" https://www.gulahmedshop.com/media/catalog/product/a/i/air.jpg?optimize=medium&fit=bounds&height=1050&width=700"
+        />
+        <caption>
+          Air Perfume For Men
+        </caption>
+      </div>
+    </div>
+  </body>
+</html>
