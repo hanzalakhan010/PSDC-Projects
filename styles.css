@@ -21,3 +21,13 @@ a{
     padding: 10px;
     text-align: center;
 }
+
+img{
+    width: 20px;
+}
+p{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+}
