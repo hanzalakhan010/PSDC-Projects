@@ -1,15 +1,26 @@
-// name_= 'Hanzala Khan'
-// age  = 19
-// pie = 3.14
-// isStudying = true
+name_= 'Hanzala Khan'
+age  = 19
+pie = 3.14
+isStudying = true
 
-// food = undefined
-// drink = null
+food = undefined
+drink = null
 
 // console.log(name_,age,pie,isStudying)
 
+user1 = {
+    name:'Hanzala Khan',
+    age:19,
+    isStudying:false,
+    brotherName :'Ubada Khan'
+}
+user2 = {
+    name: user1.brotherName,
+    age : 10,
+    isStudying:true
+}
 
-// Question:
-// Write a program which will find all such numbers which are divisible by 7 but are not a multiple of 5,
-// between 2000 and 3200 (both included).
-// The numbers obtained should be printed in a comma-separated sequence on a single line.
+user1.brotherName = 'Ali'
+
+
+console.log(user2.name,user1.brotherName)
