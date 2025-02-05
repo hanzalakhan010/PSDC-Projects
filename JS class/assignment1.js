@@ -9,6 +9,7 @@ fruits  =[
     'Orange'
 ]
 
+
 cart = [
     {
         productName:'pen',
@@ -34,5 +35,12 @@ cart = [
 
 
 {
-    name_ : 'Hanzala'
+    var laptop = "HP Elite"
+    let manafacturer = "HP"
+    const pi = 3.14
+    // manafacturer outside this scope is undefined
 }
+
+
+console.log(laptop)
+// console.log(manafacturer) // this will throw error
