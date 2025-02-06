@@ -49,6 +49,16 @@
 // Then, the output should be:
 // 40320
 
+function factorial(n){
+    var res = 1;
+    for (let i =1;i<=n;i++){
+        res*=i
+    }   
+    console.log(res)
+}
+factorial(8)
+
+
 // Hints:
 // In case of input data being supplied to the question, it should be assumed to be a console input.
 
