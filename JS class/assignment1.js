@@ -51,7 +51,7 @@ obj1 = {
     addr:"karachi"
 }
 
-obj2 = obj1
+obj2 = {...obj1}
 console.log(obj1.name)
 console.log(obj2.name)
 

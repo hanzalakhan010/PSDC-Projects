@@ -49,14 +49,17 @@
 // Then, the output should be:
 // 40320
 
-function factorial(n){
-    var res = 1;
-    for (let i =1;i<=n;i++){
-        res*=i
-    }   
-    console.log(res)
-}
-factorial(8)
+// function factorial(n){
+//     var res = 1;
+//     if (n==0){return1}
+//     else{
+//         for (let i =1;i<=n;i++){
+//             res*=i
+//         }   
+//         return res
+//     }
+// }
+// factorial(8)
 
 
 // Hints:
@@ -82,6 +85,12 @@ factorial(8)
 // 8
 // Then, the output should be:
 // {1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64}
+// var output = {}
+// for (let n=1;n<=10;n++){
+//     output[n] = n**2
+// }
+// console.log(output)
+
 
 // Hints:
 // In case of input data being supplied to the question, it should be assumed to be a console input.
@@ -107,6 +116,8 @@ factorial(8)
 // Then, the output should be:
 // ['34', '67', '55', '33', '12', '98']
 // ('34', '67', '55', '33', '12', '98')
+
+
 
 // Hints:
 // In case of input data being supplied to the question, it should be assumed to be a console input.
