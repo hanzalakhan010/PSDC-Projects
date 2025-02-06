@@ -67,9 +67,22 @@
 
 
 
-const a = {
-    name:  "hanzala"
-}
-a.name = 'Ubada'
-a.age = 12
-console.log(a)
+// const a = {
+//     name:  "hanzala"
+// }
+// a.name = 'Ubada'
+// a.age = 12
+// console.log(a)
+
+
+// var a = new Date()
+// console.log(a.getMonth())
+var a = 10
+var b = 12
+
+
+console.log(a+b)
+console.log(a-b)
+console.log(a*b)
+console.log(a/b)
+console.log(a%b)
