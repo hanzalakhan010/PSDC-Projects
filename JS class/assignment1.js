@@ -77,12 +77,29 @@
 
 // var a = new Date()
 // console.log(a.getMonth())
-var a = 10
-var b = 12
+Assignment :
+// table of form 1-5
 
 
-console.log(a+b)
-console.log(a-b)
-console.log(a*b)
-console.log(a/b)
-console.log(a%b)
+
+// var a = 10
+// var b = 12
+
+
+// console.log(a+b)
+// console.log(a-b)
+// console.log(a*b)
+// console.log(a/b)
+// console.log(a%b)
+
+var tables = []
+
+
+for (let i=1;i<=5;i++){
+    // console.log(`table of ${i}`)
+    tables = []
+    for(let j=1;j<=10;j++){
+        // tables.push(`${i} * ${j} = ${i*j}`)
+        console.log(`${i} * ${j} = ${i*j}`)
+    }
+}
