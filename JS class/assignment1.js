@@ -1,46 +1,65 @@
-// 2/4/25
-// Array vs object
-// var let const
+// // 2/4/25
+// // Array vs object
+// // var let const
 
 
-fruits  =[
-    'Banana',
-    'Appple',
-    'Orange'
-]
+// fruits = [
+//     'Banana',
+//     'Appple',
+//     'Orange'
+// ]
+// var cart = {
+//     pen: {
+//         quantity: 10,
+//         manafacturer: 'Signature',
+//         price: 10
+//     },
+//     calculator: {
+//         quantity: 1,
+//         manafacturer: 'Calola',
+//         price: 100
+//     },
+//     notepad: {
+//         quantity: 2,
+//         manafacturer: 'gaba',
+//         price: 50
+//     }
+// }
+
+// function addToCart() {
+//     var laptop = "HP Elite"
+//     let manafacturer = "HP"
+//     const pi = 3.14
+//     // manafacturer outside this scope is undefined
+// }console.log(obj1)
+    
+    
+
+// console.log(laptop)console.log(obj1)
+
+// // console.log(manafacturer) // this will throw errorconsole.log(obj1)
+    
 
 
-cart = [
-    {
-        productName:'pen',
-        quantity:10,
-        manafacturer:'Signature',
-        price:10
-    },
-    {
-        productName:'calculator',
-        quantity:1,
-        manafacturer:'Calola',
-        price:100
-    },
-    {
-        productName:'notepad',
-        quantity:2,
-        manafacturer:'gaba',
-        price:50
-    }
-]
-
-
-
-
-{
-    var laptop = "HP Elite"
-    let manafacturer = "HP"
-    const pi = 3.14
-    // manafacturer outside this scope is undefined
+obj1 = {
+    name :'hanzala',
+    age:19,
+    addr:"karachi"
 }
 
+obj2 = obj1
+console.log(obj1.name)
+console.log(obj2.name)
+// obj1 = {
+//     name:'Ubada'
+// }obj1 = {
+//     name:'Ubada'
+// }obj1 = {
+//     name:'Ubada'
+// }
 
-console.log(laptop)
-// console.log(manafacturer) // this will throw error
+
+obj1.name = 'Ubada'
+
+console.log(obj1.name)
+console.log(obj2.name)
