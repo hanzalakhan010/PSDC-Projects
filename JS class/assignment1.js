@@ -156,5 +156,6 @@ let  months = [
     "July", "August", "September", "October", "November", "December"
   ];
   
-months.splice(2,2,...["hanzala",'Khan','ahmed'])
-console.log(months)
+months.splice(1,0,...["hanzala",'Khan','ahmed'])
+// console.log(months)
+console.log(months.slice())
