@@ -111,5 +111,9 @@ var fruits = ['Apple','Banana',"Cherry"]
 fruits.push(...['Date','Mangoe'])
 console.log(fruits)
 
-fruits.unshift('Banana')
+fruits.unshift(...['Banana',"apple"])
 console.log(fruits)
+
+
+console.log(fruits.slice(1,3))
+
