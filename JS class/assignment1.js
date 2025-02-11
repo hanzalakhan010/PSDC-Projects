@@ -92,14 +92,24 @@
 // console.log(a/b)
 // console.log(a%b)
 
-var tables = []
+// var tables = []
 
 
-for (let i=1;i<=5;i++){
-    // console.log(`table of ${i}`)
-    tables = []
-    for(let j=1;j<=10;j++){
-        // tables.push(`${i} * ${j} = ${i*j}`)
-        console.log(`${i} * ${j} = ${i*j}`)
-    }
-}
+// for (let i=1;i<=5;i++){
+//     // console.log(`table of ${i}`)
+//     tables = []
+//     for(let j=1;j<=10;j++){
+//         // tables.push(`${i} * ${j} = ${i*j}`)
+//         console.log(`${i} * ${j} = ${i*j}`)
+//     }
+// }
+
+var fruits = ['Apple','Banana',"Cherry"]
+// console.log(fruits.indexOf('Apple'))
+
+
+fruits.push(...['Date','Mangoe'])
+console.log(fruits)
+
+fruits.unshift('Banana')
+console.log(fruits)
