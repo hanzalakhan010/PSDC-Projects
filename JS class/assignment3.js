@@ -42,6 +42,14 @@ products  = [product1,product2,product3]
 
 resturant ={
     name:'Some Random Resturant',
-    address: Math.floor(Math.random()),
+    address: Math.floor(Math.random()*100),
+    ctity:'Karachi',
+    state:'NY',
+    zipcode:'14234'
 }
 console.log(resturant)
+
+
+for (let i =0;i<100;i++){
+    console.log(Math.floor(Math.random()*500) +500)
+}
