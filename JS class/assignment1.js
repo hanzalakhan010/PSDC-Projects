@@ -113,17 +113,27 @@ var fruits = ['Apple','Banana',"Cherry"]
 // fruits.unshift(...['Banana',"apple"])
 // console.log(fruits)
 
-console.log(fruits.pop())
-console.log(fruits.shift())
+// console.log(fruits.pop())
+
+// console.log(fruits.shift())
 // console.log(fruits)
+
+console.log(fruits.keys())
+
+
+fruits[10] = 'Hanzala'
+console.log(fruits.values())
 
 
 // console.log(fruits.slice(1,3))
 
 // students = [
-//     {name:'hanzala',age:19},
-//     {name}
+//     {name:'Hanzala',age:19},
+//     {name:'Ahmed',age:23},
+//     {name:'Bilal',age:10}
 // ]
 
+// st = students.filter((ele) => ele.age>10)
+// console.log(st)
 
 
