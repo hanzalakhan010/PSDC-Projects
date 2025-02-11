@@ -127,12 +127,13 @@
 
 // console.log(fruits.slice(1,3))
 
-students = [
-    {name:'Hanzala',age:19},
-    {name:'Ahmed',age:23},
-    {name:'Bilal',age:10}
-]
+// students = [
+//     {name:'Hanzala',age:19},
+//     {name:'Ahmed',age:23},
+//     {name:'Bilal',age:10}
+// ]
 
+// console.log(students.includes({name:'Hanzala',age:19}))
 
 // st = students.filter((ele) => ele.age>10)
 // console.log(st)
@@ -145,3 +146,15 @@ students = [
 // console.log(set4)
 
 // console.log(set4.includes(set4.pop()))
+
+// set1 = [1,2,3,4,5,7,8]
+// console.log(set1.slice(10,))
+
+
+let  months = [
+    "January", "February", "March", "April", "May", "June", 
+    "July", "August", "September", "October", "November", "December"
+  ];
+  
+months.splice(2,2,...["hanzala",'Khan','ahmed'])
+console.log(months)

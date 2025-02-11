@@ -142,22 +142,31 @@
 // printString: to print the string in upper case.
 // Also please include simple test function to test the class methods.
 
-pr = prompt('Enter')
+const readline = require('node:readline');
 class Str{
     constructor(){
      this.str = ''   
     }
     getString(){
-        this.str = prompt('Enter a String')
+
+    const rl = readline.createInterface({
+        input: process.stdin,
+        output: process.stdout,
+         });
+         rl.question(`What's your name?`, name => {
+            this.str = name;
+            rl.close();
+          });
     }
     printString(){
+        console.log('Hna')
         console.log(this.str)
     }
 }
 
-// s = new Str()
-// s.getString()
-// s.printString()
+s = new Str()
+s.getString()
+s.printString()
 
 // Hints:
 // Use __init__ method to construct some parameters
