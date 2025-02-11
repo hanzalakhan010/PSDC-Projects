@@ -107,13 +107,23 @@
 var fruits = ['Apple','Banana',"Cherry"]
 // console.log(fruits.indexOf('Apple'))
 
+// fruits.push(...['Date','Mangoe'])
+// console.log(fruits)
 
-fruits.push(...['Date','Mangoe'])
-console.log(fruits)
+// fruits.unshift(...['Banana',"apple"])
+// console.log(fruits)
 
-fruits.unshift(...['Banana',"apple"])
-console.log(fruits)
+console.log(fruits.pop())
+console.log(fruits.shift())
+// console.log(fruits)
 
 
-console.log(fruits.slice(1,3))
+// console.log(fruits.slice(1,3))
+
+// students = [
+//     {name:'hanzala',age:19},
+//     {name}
+// ]
+
+
 
