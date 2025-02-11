@@ -104,7 +104,7 @@
 //     }
 // }
 
-var fruits = ['Apple','Banana',"Cherry"]
+// var fruits = ['Apple','Banana',"Cherry"]
 // console.log(fruits.indexOf('Apple'))
 
 // fruits.push(...['Date','Mangoe'])
@@ -118,22 +118,30 @@ var fruits = ['Apple','Banana',"Cherry"]
 // console.log(fruits.shift())
 // console.log(fruits)
 
-console.log(fruits.keys())
+// console.log(fruits.keys())
 
 
-fruits[10] = 'Hanzala'
-console.log(fruits.values())
+// fruits[10] = 'Hanzala'
+// console.log(fruits.values())
 
 
 // console.log(fruits.slice(1,3))
 
-// students = [
-//     {name:'Hanzala',age:19},
-//     {name:'Ahmed',age:23},
-//     {name:'Bilal',age:10}
-// ]
+students = [
+    {name:'Hanzala',age:19},
+    {name:'Ahmed',age:23},
+    {name:'Bilal',age:10}
+]
+
 
 // st = students.filter((ele) => ele.age>10)
 // console.log(st)
 
 
+// let set1 = [1,2,3]
+// let set2 = [4,5,6]
+// let set3 = [7,8,9]
+// set4 = set1.concat(set3,set2)
+// console.log(set4)
+
+// console.log(set4.includes(set4.pop()))

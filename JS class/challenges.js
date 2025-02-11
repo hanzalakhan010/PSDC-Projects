@@ -1,5 +1,6 @@
 // 100+ Python challenging programming exercises
 
+
 // 1.	Level description
 // Level	Description
 // Level 1	Beginner means someone who has just gone through an introductory Python course. He can solve some problems with 1 or 2 Python classes or functions. Normally, the answers could directly be found in the textbooks.
@@ -140,6 +141,23 @@
 // getString: to get a string from console input
 // printString: to print the string in upper case.
 // Also please include simple test function to test the class methods.
+
+pr = prompt('Enter')
+class Str{
+    constructor(){
+     this.str = ''   
+    }
+    getString(){
+        this.str = prompt('Enter a String')
+    }
+    printString(){
+        console.log(this.str)
+    }
+}
+
+// s = new Str()
+// s.getString()
+// s.printString()
 
 // Hints:
 // Use __init__ method to construct some parameters
