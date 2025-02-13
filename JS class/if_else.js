@@ -89,6 +89,8 @@ function marks(marks) {
 }
 
 for (let i = 0; i <= 100; i++) {
-    mark = Math.floor(Math.random() * 100)
+    let mark = Math.floor(Math.random() * 100)
     console.log(`Marks = ${mark} Grade = ${marks(mark)}`)
 }
+
+
