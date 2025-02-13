@@ -159,14 +159,17 @@ class Str{
           });
     }
     printString(){
-        console.log('Hna')
+        console.log('debug')
         console.log(this.str)
     }
 }
 
 s = new Str()
 s.getString()
-s.printString()
+setTimeout(()=>{
+    s.str
+    s.printString()
+},5000)
 
 // Hints:
 // Use __init__ method to construct some parameters
@@ -202,6 +205,7 @@ s.printString()
 // 100,150,180
 // The output of the program should be:
 // 18,22,24
+
 
 // Hints:
 // If the output received is in decimal form, it should be rounded off to its nearest value (for example, if the output received is 26.0, it should be printed as 26)

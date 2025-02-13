@@ -6,6 +6,12 @@ const student = {
 }
 
 
+// console.log(Object.keys(student))
+
+// Object.keys(student).map((key)=>{
+//     console.log(`${key}: ${student[key]}`)
+// })
+
 console.log(`Name: ${student.name}`)
 console.log(`Age: ${student.age}`)
 console.log(`Subjects : ${student.subjects}`)
