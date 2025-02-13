@@ -81,7 +81,6 @@ function marks(marks) {
     }
     if (marks >= 90) {
         grade = 'A'
-
     }
     else {    
         grade = 'F'
