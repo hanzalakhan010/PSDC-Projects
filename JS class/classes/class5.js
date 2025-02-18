@@ -25,7 +25,8 @@
 // }
 // console.log(i)
 
-for(let i=0;i<=100;i+=10){
+for(let n=1;n<=10;n+=1){
+    i = n*10
     console.log(`Checkpoint ${i}`)
     if (i==50){
         console.log('Halfway there !')
