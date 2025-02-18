@@ -14,12 +14,26 @@
 // console.log(sum)
 
 
-for (let i = 20;i>=1;i--){
-    console.log(i)
-}
+// for (let i = 20;i>=1;--i){
+//     console.log(i)
+// }
 
-// for (let i=1;i<=40;i*=2){
+// for (var i=0;i<=40;i+=2){
 //     if (i%5!=0){
 //         console.log(i)
 //     }
 // }
+// console.log(i)
+
+for(let i=0;i<=100;i+=10){
+    console.log(`Checkpoint ${i}`)
+    if (i==50){
+        console.log('Halfway there !')
+        continue
+    }
+    else if (i ==100){
+        console.log('you made it')
+        continue
+    }
+}
+console.log('All done')
