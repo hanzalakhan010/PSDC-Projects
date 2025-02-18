@@ -148,7 +148,7 @@ function marks(marks) {
     return grade
 }
 result = []
-for (let i = 0; i <= 100; i++) {
+for (let i = 0; i < 100; i++) {
     let mark = Math.floor(Math.random() * 100)
     result.push([mark, marks(mark)])
     // console.log(`Marks = ${mark} Grade = ${marks(mark)}`)
