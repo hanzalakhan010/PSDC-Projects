@@ -9,7 +9,7 @@
 
 // }
 
-// Exeercise
+// Exercise
 
 // userLoggedIn = true
 // // userSubscription = 'pro'
@@ -86,12 +86,43 @@
 //         grade = 'F'
 //     }
 //     return grade
-// }
+// // }
 
-function unitTestingMarks(result){
-    for (let i = 0;i<=result.length;i++){
-        switch(true){
-            
+function unitTestingMarks(result) {
+    for (let i = 0; i <= result.length; i++) {
+        switch (true) {
+            case result[i][0] >= 90: {
+                if (result[i][1] == 'A') {
+                    console.log('Correct')
+                }
+                break
+            }
+            case result[i][0] >= 80: {
+                if (result[i][1] == 'B') {
+                    console.log('Correct')
+                }
+                break
+            }
+            case result[i][0] >= 70 :{
+                if (result[i][1] == 'C'){
+                    console.log('Correct')
+                }
+                break
+            }
+            case result[i][0] >= 60 :{
+                if (result[i][1] == 'D'){
+                    console.log('Correct')
+                }
+                break
+            }
+            default:{
+                if((result[i][0]<60)&&(result[i][1]=='F')){
+                    console.log('Correct')
+                }
+                else{
+                    console.error('Wrong')
+                }
+            }
         }
     }
 }
@@ -110,17 +141,20 @@ function marks(marks) {
     else if (marks >= 60) {
         grade = 'D'
     }
-    else {    
+    else {
         grade = 'F'
     }
 
     return grade
 }
-result = [] 
+result = []
 for (let i = 0; i <= 100; i++) {
     let mark = Math.floor(Math.random() * 100)
-    result.push([mark,marks(mark)])
+    result.push([mark, marks(mark)])
     // console.log(`Marks = ${mark} Grade = ${marks(mark)}`)
 }
 
+// console.table(result)
+// 
+unitTestingMarks(result)
 
