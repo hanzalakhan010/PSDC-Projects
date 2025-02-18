@@ -69,28 +69,56 @@
 //         return grade
 //     }
 // }
+// function marks(marks) {
+//     if (marks >= 60) {
+//         grade = "D"
+//     }
+//     if (marks >= 70) {
+//         grade = 'C'
+//     }
+//     if (marks >= 80) {
+//         grade = "B"
+//     }
+//     if (marks >= 90) {
+//         grade = 'A'
+//     }
+//     else {    
+//         grade = 'F'
+//     }
+//     return grade
+// }
+
+function unitTestingMarks(result){
+    for (let i = 0;i<=result.length;i++){
+        if 
+    }
+}
+
+
 function marks(marks) {
-    if (marks >= 60) {
-        grade = "D"
+    if ((marks >= 90)) {
+        grade = "A"
     }
-    if (marks >= 70) {
-        grade = 'C'
+    else if (marks >= 80) {
+        grade = 'B'
     }
-    if (marks >= 80) {
-        grade = "B"
+    else if (marks >= 70) {
+        grade = "C"
     }
-    if (marks >= 90) {
-        grade = 'A'
+    else if (marks >= 60) {
+        grade = 'D'
     }
     else {    
         grade = 'F'
     }
+
     return grade
 }
-
+result = [] 
 for (let i = 0; i <= 100; i++) {
     let mark = Math.floor(Math.random() * 100)
-    console.log(`Marks = ${mark} Grade = ${marks(mark)}`)
+    result.push([mark,marks(mark)])
+    // console.log(`Marks = ${mark} Grade = ${marks(mark)}`)
 }
 
 
