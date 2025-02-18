@@ -66,7 +66,7 @@ function Alarm(dayOfWeek) {
             alarm = 'wake at 8 am'
             break
         }
-        case 'Tuesdday':
+        case 'Tuesday':
         case 'Wednesday': {
             alarm = "wake at 9 am"
             break
