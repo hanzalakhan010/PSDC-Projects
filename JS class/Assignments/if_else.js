@@ -90,7 +90,9 @@
 
 function unitTestingMarks(result){
     for (let i = 0;i<=result.length;i++){
-        if 
+        switch(true){
+            
+        }
     }
 }
 
