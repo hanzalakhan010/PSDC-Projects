@@ -18,6 +18,7 @@
 //     console.log(i)
 // }
 
+
 // for (var i=0;i<=40;i+=2){
 //     if (i%5!=0){
 //         console.log(i)
