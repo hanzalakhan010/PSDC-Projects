@@ -76,7 +76,25 @@ for(let i = 0;i<library.length;i++){
     }
 }
 
-function removeByTitle(title){
-    for(let )
-}
 
+
+
+function removeByTitle(title){
+    for(let i =0;i<library.length;i++){
+        if (library[i].title == title){
+            library.splice(i,1)
+        }
+    }
+}
+// removeByTitle('Hanzala')
+// console.log(library)
+
+function uptdateYearPublished(title,yearPublished){
+    for(let i = 0;i<library.length;i++){
+        if (library[i].title == title){
+            library[i].yearPublished = yearPublished
+        }
+    }
+}
+// uptdateYearPublished('Ubada',1999)
+// console.log(library)
