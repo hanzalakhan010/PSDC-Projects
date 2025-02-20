@@ -41,3 +41,143 @@ Process an array of numbers to find average, min, max without using reduce or Ma
 **6. Iterative String Permutations**
 
 Generate all permutations of a string using only loops, not recursion. This is challenging but possible with iterative approaches.
+
+
+
+
+
+Here are **realistic input/output examples** for each problem with practical scenarios:
+
+---
+
+### 1. ATM Cash Withdrawal System
+**Input:**
+```js
+withdrawCash(325, {
+  100: 3,  // Only 3 hundreds left
+  50: 15,
+  20: 20,
+  10: 30,
+  5: 50
+});
+```
+**Output:**
+```
+Dispensed: 3x100, 1x20, 1x5
+Remaining inventory:
+100: 0
+50: 15
+20: 19
+10: 30
+5: 49
+```
+**Edge Case Input:**
+```js
+withdrawCash(130, {100: 1, 50: 0, 20: 6, 10: 2, 5: 10});
+```
+**Output:**
+```
+Dispensed: 1x100, 1x20, 2x5
+Remaining inventory:
+100: 0
+20: 5
+5: 8
+```
+
+---
+
+### 2. Elevator Scheduling System
+**Input:**
+```js
+operateElevator(3, [4, 1, 5, 2], 10); 
+// Current floor 3, requests, max capacity 10
+```
+**Output:**
+```
+[UP] Doors open at 4 (4 people enter)
+[UP] Capacity reached (10/10)
+[DOWN] Stopping at 2 (5 people exit)
+[DOWN] Doors open at 1 (3 people enter)
+[UP] Doors open at 5 (Final destination)
+```
+**Edge Case:**
+```js
+operateElevator(5, [], 8); // Empty call
+```
+**Output:**
+```
+Idle at floor 5
+```
+
+---
+
+### 3. Live Sports Score Tracker
+**Input:**
+```js
+trackGame('soccer', 'MUNvsARS', console.log);
+```
+**Simulated Output (with delays):**
+```
+[00:00] Initial: MUN 0 - 0 ARS
+[23:45] GOAL! MUN 1 - 0 ARS
+[45:00] Half-time: MUN 1 - 0 ARS
+[89:12] GOAL! MUN 1 - 1 ARS
+[90:00+] Final: MUN 1 - 1 ARS
+```
+
+---
+
+### 4. Package Delivery Route Optimizer
+**Input:**
+```js
+const stops = [
+  {location: 'Warehouse', distance: 0, priority: 0},
+  {location: 'A', distance: 12, priority: 2},
+  {location: 'B', distance: 8, priority: 1},
+  {location: 'C', distance: 25, priority: 3}
+];
+calculateRoute(stops, 30); // 30 mile fuel range
+```
+**Output:**
+```
+Optimal route: B (8mi) → A (12mi) → C (25mi)
+Total distance: 45mi
+Fuel check:
+- After B: 22mi remaining
+- After A: 10mi remaining
+- Refuel needed before C
+```
+
+---
+
+### 5. Hospital Triage System
+**Input:**
+```js
+const patients = [
+  {name: 'John', severity: 3},
+  {name: 'Maria', severity: 1},
+  {name: 'Alex', severity: 2},
+  {name: 'Emma', severity: 1} // New arrival during triage
+];
+handleTriage(patients);
+```
+**Output:**
+```
+Processing Maria (Severity 1)
+New patient Emma (Severity 1) arrived
+Processing Emma (Severity 1)
+Processing Alex (Severity 2)
+Processing John (Severity 3)
+Queue cleared
+```
+
+---
+
+**Key Real-World Variations Covered:**  
+1. Inventory shortages (ATM)  
+2. Capacity limits + dynamic requests (Elevator)  
+3. Real-time event streaming (Sports)  
+4. Fuel constraints + reprioritization (Delivery)  
+5. Queue mutations during processing (Hospital)  
+
+Want me to show the actual loop implementations for any of these scenarios? These examples reflect how while loops handle state changes and external events in production systems!
