@@ -1,0 +1,20 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+#books{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#books div{
+    background-color: rgb(206, 206, 206);
+    padding: 10px;
+}
+
+.bookTitle{
+    font-size: larger;
+    font-weight: bolder;
+}
+button:hover{
+    cursor: pointer;
+}

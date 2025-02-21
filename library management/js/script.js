@@ -74,12 +74,15 @@ function renderBooks(){
     for(let i = 0;i<books.length;i++){
         document.getElementById('books').innerHTML+=`
         <div>
-            <span class = 'bookTitle'>${books[i].title}</span>
-            <span class = 'bookAuthor'>${books[i].author}</span>
-            <span class = 'bookGenre'>${books[i].genre}</span>
-            <span class = 'bookYear'>${books[i].year}</span>
-            <span class = 'bookIsbn'>${books[i].isbn}</span>
+            <div>
+                <p class = 'bookTitle'>${books[i].title}</p>
+                <p class = 'bookAuthor'> by ${books[i].author}</p>
+                <p class = 'bookYear'>${books[i].year}</p>
+            </div>
+            <button>Edit</button>
         </div>
         `
     }
   }
+//   <span class = 'bookGenre'>${books[i].genre}</span>
+{/* <span class = 'bookIsbn'>${books[i].isbn}</span> */}
