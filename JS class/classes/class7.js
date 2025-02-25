@@ -25,7 +25,7 @@ if (tokens[0].length>2){
     newEmail+=tokens[0][tokens[0].length-1]
     newEmail+='@'
 
-    
+
 }
 else{
     newEmail = email
@@ -33,3 +33,6 @@ else{
 
 newEmail+=tokens[1]
 console.log(newEmail)
+
+// 3d array
+// values accession
