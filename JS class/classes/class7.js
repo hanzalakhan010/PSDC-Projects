@@ -36,3 +36,29 @@ console.log(newEmail)
 
 // 3d array
 // values accession
+let str = "Hanzala Khan"
+let newStr = ''
+for (let chr of str){
+    newStr = chr+newStr
+}
+// console.log(newStr)
+
+// arr = [1,2,3,4]
+// for (let value of arr){
+//     console.log(value)
+// }
+// arr = [1,2,3,4]
+// console.log(Array(arr).keys())
+
+
+obj = {
+    a:1,
+    b:2,
+    c:3,
+    d:4
+}
+
+
+for (let key in obj){
+    console.log(obj[key])
+}
