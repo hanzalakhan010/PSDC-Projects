@@ -12,27 +12,27 @@
 // for(lel i =0;i<sen.length;)
 
 let email = 'hanzalakhan.private@gmail.com'
-function emailMasking(email){
+function emailMasking(email) {
 
     tokens = email.split('@')
     let newEmail = ''
-    if (tokens[0].length>2){
+    if (tokens[0].length > 2) {
         // for(let i=0;i<tokens[0].length;i++){
         //     newEmail+=
         // }
-    
-        newEmail+=tokens[0][0]
-        for(let i = 0;i<tokens[0].length-2;i++)
-            newEmail+='*'
-        newEmail+=tokens[0][tokens[0].length-1]
-        newEmail+='@'
-    
-    
+
+        newEmail += tokens[0][0]
+        for (let i = 0; i < tokens[0].length - 2; i++)
+            newEmail += '*'
+        newEmail += tokens[0][tokens[0].length - 1]
+        newEmail += '@'
+
+
     }
-    else{
+    else {
         newEmail = email
     }
-    newEmail+=tokens[1]
+    newEmail += tokens[1]
 }
 
 
@@ -43,8 +43,8 @@ function emailMasking(email){
 
 let str = "Hanzala Khan"
 let newStr = ''
-for (let chr of str){
-    newStr = chr+newStr
+for (let chr of str) {
+    newStr = chr + newStr
 }
 
 // console.log(newStr)
@@ -58,10 +58,10 @@ for (let chr of str){
 
 
 obj = {
-    a:1,
-    b:2,
-    c:3,
-    d:4
+    a: 1,
+    b: 2,
+    c: 3,
+    d: 4
 }
 
 a = 'b'
