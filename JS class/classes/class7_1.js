@@ -28,13 +28,27 @@
 // z()
 
 
-
-function truncteString(str,maxLngth){
+function truncteString(str,maxLength){
     let newStr = ''
-    newStr +=str.slice(0,maxLngth)
-    newStr+='.'.repeat(str.length-maxLngth)
+    newStr +=str.slice(0,maxLength)
+    newStr+='.'.repeat(str.length-maxLength)
     return newStr
 }
+console.log(truncteString('Hanzala Khan',3))
 
+function discountCalclator(price,discountPercentage){
+    console.log(`Original Price: ${price},  Discount Price:$${price*discountPercentage/100}`)
 
-console.log(truncteString('hazala khan',3))
+}
+
+function vowelCount(string){
+    let count =0;
+    for (let chr of string){
+        if (chr == 'a' ||chr == 'e' ||chr == 'i' ||chr == 'o' ||chr == 'u' ){
+            count++
+        }
+    }
+    return count
+}
+
+console.log(vowelCount('hanzala Khan'))
