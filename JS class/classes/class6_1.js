@@ -22,7 +22,6 @@ str2 = 'we are learning javascript'
 
 
 function reverse(str){
-    
     rev = ''
     for(let i = str.length ;i>=0;i--){
         // rev+=str2.slice(str2.length-i,1)
