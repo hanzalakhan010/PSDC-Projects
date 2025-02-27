@@ -12,4 +12,16 @@
 // document.query
 
 document.getElementById('paragraph').textContent = 'New paragraph text'
+
+
 document.getElementById('heading').innerText = 'New heading text'
+
+
+document.getElementById('div').innerHTML=`<p>Parargraph inserted by me`
+
+
+
+
+
+// let div = document.createElement('h1')
+// div.setAttribute()
