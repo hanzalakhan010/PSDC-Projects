@@ -47,6 +47,47 @@ function encode(string) {
     }
     return encodedString
 }
-console.log(encode('Hanzala Khan'))
-console.log(encode('Hgnzgug Ihgn'))
+// console.log(encode('Hanzala Khan'))
+// console.log(encode('Hgnzgug Ihgn'))
 // function encode(string){}
+
+// Frequency Counter 
+
+products = [
+    "CPU",
+    "GPU",
+    "Motherboard",
+    "Mouse",
+    "Mouse",
+    "Speaker",
+    "CPU",
+    "GPU",
+    "Motherboard",
+    "Mouse",
+    "Mouse",
+    "Speaker",
+    "Mouse",
+    "Speaker",
+    "CPU",
+    "GPU",
+    "Motherboard",
+    "Mouse",
+    "Mouse",
+    "Speaker",
+   
+]
+let frequency = {}
+for (let product of products) {
+    if (frequency[product]) {
+        frequency[product] += 1
+    }
+    else {
+        frequency[product] = 1
+    }
+}
+
+console.log(frequency)
+
+function validAnagram(str1,str2){
+
+}
