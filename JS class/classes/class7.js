@@ -11,6 +11,7 @@
 // let sen = 'world'
 // for(lel i =0;i<sen.length;)
 
+// Email masking
 let email = 'hanzalakhan.private@gmail.com'
 function emailMasking(email) {
 
@@ -30,7 +31,7 @@ function emailMasking(email) {
 
     }
     else {
-        newEmail = email
+        newEmail = tokens[0]
     }
     newEmail += tokens[1]
 }
@@ -46,9 +47,14 @@ let newStr = ''
 for (let chr of str) {
     newStr = chr + newStr
 }
+console.log(str)
+console.log(newStr)
 
-// console.log(newStr)
-
+newStr= ''
+for (let i =0;i<str.length;i++){
+    newStr = str[i] +newStr
+}
+console.log(newStr)
 // arr = [1,2,3,4]
 // for (let value of arr){
 //     console.log(value)
@@ -57,15 +63,15 @@ for (let chr of str) {
 // console.log(Array(arr).keys())
 
 
-obj = {
-    a: 1,
-    b: 2,
-    c: 3,
-    d: 4
-}
+// obj = {
+//     a: 1,
+//     b: 2,
+//     c: 3,
+//     d: 4
+// }
 
-a = 'b'
-console.log(obj.a)
+// a = 'b'
+// console.log(obj.a)
 // for (let key in obj){
 //     console.log(obj[key])
 //     console.log(obj[key])

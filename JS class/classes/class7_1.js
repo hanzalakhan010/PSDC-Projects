@@ -27,7 +27,7 @@
 
 // z()
 
-
+// Truncate string
 function truncteString(str,maxLength){
     let newStr = ''
     newStr +=str.slice(0,maxLength)
@@ -38,9 +38,8 @@ console.log(truncteString('Hanzala Khan',3))
 
 function discountCalclator(price,discountPercentage){
     console.log(`Original Price: ${price},  Discount Price:$${price*discountPercentage/100}`)
-
 }
-
+// Vowel Count
 function vowelCount(string){
     let count =0;
     for (let chr of string){
