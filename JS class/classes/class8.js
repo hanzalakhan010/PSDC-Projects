@@ -76,18 +76,33 @@ products = [
     "Speaker",
    
 ]
-let frequency = {}
-for (let product of products) {
-    if (frequency[product]) {
-        frequency[product] += 1
+
+function frequencyCounter(string){
+    let frequency = {}
+    for (let chr of string) {
+        if (frequency[chr]) {
+            frequency[chr] += 1
+        }
+        else {
+            frequency[chr] = 1
+        }
     }
-    else {
-        frequency[product] = 1
-    }
+    return frequency
 }
 
-console.log(frequency)
 
 function validAnagram(str1,str2){
-
+    freq1 = frequencyCounter(str1)
+    freq2 = frequencyCounter(str2)
+    for(let ele in freq1){
+        // console.log(freq1[ele],freq2[ele])
+        if (freq1[ele] !== freq2[ele]||(!freq1[ele])||(!freq2[ele])){
+            return false
+        }
+    }
+    return true
 }
+
+console.log(validAnagram('car','rac'))
+console.log(validAnagram('hat','aht'))
+console.log(validAnagram('hatf','ahr'))
